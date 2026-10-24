@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nexus | The Future of AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#005eff;
+filter:blur(200px);
+top:-200px;
+right:-100px;
+opacity:.4;
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:400px;
+height:400px;
+background:#00c3ff;
+filter:blur(180px);
+bottom:-150px;
+left:-100px;
+opacity:.25;
+z-index:-1;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+position:sticky;
+top:0;
+backdrop-filter:blur(15px);
+background:rgba(0,0,0,.3);
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+background:linear-gradient(90deg,#ffffff,#00aaff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+opacity:.8;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+.badge{
+padding:10px 18px;
+border:1px solid rgba(255,255,255,.15);
+border-radius:50px;
+background:rgba(255,255,255,.05);
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:90px;
+font-weight:800;
+line-height:1;
+margin-bottom:20px;
+}
+
+.gradient{
+background:linear-gradient(90deg,#ffffff,#00bfff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+max-width:800px;
+font-size:22px;
+color:#cfcfcf;
+margin-bottom:40px;
+line-height:1.8;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:40px;
+border:none;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+}
+
+.primary{
+background:linear-gradient(90deg,#0066ff,#00ccff);
+color:white;
+}
+
+.secondary{
+background:transparent;
+border:1px solid rgba(255,255,255,.15);
+color:white;
+}
+
+.stats{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+.stat{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+padding:35px;
+border-radius:20px;
+text-align:center;
+}
+
+.stat h2{
+font-size:45px;
+color:#00bfff;
+}
+
+.section{
+padding:120px 8%;
+}
+
+.title{
+text-align:center;
+font-size:55px;
+margin-bottom:70px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:35px;
+border-radius:20px;
+transition:.4s;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:15px;
+color:#00bfff;
+}
+
+.card p{
+color:#d6d6d6;
+line-height:1.7;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.about p{
+font-size:20px;
+line-height:1.9;
+color:#d4d4d4;
+}
+
+.footer{
+padding:60px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+margin-top:50px;
+}
+
+.footer p{
+color:#9f9f9f;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:55px;
+}
+
+.title{
+font-size:40px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">NEXUS</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<div class="badge">
+🚀 Next Generation AI Platform
+</div>
+
+<h1>
+Welcome to <span class="gradient">Nexus</span>
+</h1>
+
+<p>
+Connecting Human Potential With Artificial Intelligence.
+Building the future through innovation, learning,
+creativity and intelligent technology.
+</p>
+
+<div class="buttons">
+<button class="btn primary">Get Started</button>
+<button class="btn secondary">Learn More</button>
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h2>AI</h2>
+<p>Powered Experiences</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Always Available</p>
+</div>
+
+<div class="stat">
+<h2>∞</h2>
+<p>Possibilities</p>
+</div>
+
+<div class="stat">
+<h2>1</h2>
+<p>Vision</p>
+</div>
+
+</section>
+
+<section class="section" id="products">
+
+<h2 class="title">Nexus Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Nexus AI</h3>
+<p>
+An intelligent assistant designed to help users
+learn, create and solve problems faster.
+</p>
+</div>
+
+<div class="card">
+<h3>Nexus Study</h3>
+<p>
+A smart learning companion for students,
+exam preparation and productivity.
+</p>
+</div>
+
+<div class="card">
+<h3>Nexus Notes</h3>
+<p>
+Organize knowledge, summarize information
+and manage ideas effortlessly.
+</p>
+</div>
+
+<div class="card">
+<h3>Nexus Cloud</h3>
+<p>
+Secure storage and seamless access
+to your digital world.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<h2 class="title">About Nexus</h2>
+
+<div class="about">
+
+<p>
+Nexus was founded with a vision to create technology
+that empowers people. Our mission is to connect
+human creativity, intelligence and ambition with
+the power of AI.
+</p>
+
+<br>
+
+<p>
+Founded by Ashmit Yadav.
+</p>
+
+</div>
+
+</section>
+
+<footer class="footer" id="contact">
+
+<h2>NEXUS</h2>
+
+<br>
+
+<p>
+Connecting Human Potential With AI
+</p>
+
+<br>
+
+<p>
+© 2026 Nexus Technologies
+</p>
+
+</footer>
+
+</body>
+</html>
